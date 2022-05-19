@@ -3,6 +3,7 @@ package dao;
 import java.io.File;
 import java.util.ArrayList;
 
+import javax.swing.JFileChooser;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.transform.Transformer;
@@ -57,12 +58,11 @@ public class escribeXml {
 			breakfast_menu.appendChild(food);
 		}
 		
-
 		
+		JFileChooser nuevo = new JFileChooser();
+		nuevo.showDialog(nuevo, "Escribe y elige la ruta donde guardarlo");
+		File destino = nuevo.getSelectedFile();
 		
-		
-		
-		File destino = new File("src/xml/resultado.xml");
 		TransformerFactory transformerF = TransformerFactory.newInstance();
 		Transformer transformer = transformerF.newTransformer();
 		transformer.transform(new DOMSource(documento), new StreamResult(destino));

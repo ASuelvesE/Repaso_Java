@@ -34,6 +34,7 @@ public class DaoFactory {
 		JFileChooser eligeArchivo = new JFileChooser();
 		eligeArchivo.showDialog(eligeArchivo, "Elige fichero");
 		archivoElegido = eligeArchivo.getSelectedFile();
+		System.out.println(archivoElegido.getAbsolutePath());
 
 	}
 
