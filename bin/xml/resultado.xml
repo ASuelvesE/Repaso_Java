@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<breakfast_menu>
+	<food numCarta="13">
+		<name>Strawberry Belgian Waffles</name>
+		<price>7.95</price>
+		<description>Light Belgian waffles covered with strawberries and whipped cream</description>
+		<calories>900</calories>
+	</food>
+</breakfast_menu>
